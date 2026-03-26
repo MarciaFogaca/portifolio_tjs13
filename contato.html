@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Márcia Telles</title>
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -22,21 +26,25 @@
     </header>
 
     <main>
-        <section class="section-container">
-            <h1>Entre em Contato</h1>
-            <p>Vamos conversar sobre tecnologia, <strong>Apple</strong> ou novos projetos!</p>
+        <section class="section-container contact-container" style="display: block; text-align: center;">
+            <article class="contact-info">
+                <h1>Entre em Contato</h1>
+                <p>Vamos conversar sobre tecnologia e novos projetos!</p>
+            </article>
             
-            <form action="success.html">
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br><br>
+            <form id="formulario" action="success.html" style="max-width: 500px; margin: 0 auto; text-align: left;">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" onkeyup="validarNome()">
+                <span id="erro-nome"></span>
 
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" placeholder="Seu e-mail" required><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" onkeyup="validarEmail()">
+                <span id="erro-email"></span>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" placeholder="Como posso te ajudar?" required></textarea><br><br>
-
-                <button type="submit">Enviar Mensagem</button>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Como posso te ajudar?" rows="5"></textarea>
+                
+                <button type="submit" class="botao" style="width: 100%; margin-top: 1rem;">Enviar Mensagem</button>
             </form>
         </section>
     </main>
@@ -44,5 +52,7 @@
     <footer>
         <p>Desenvolvido por Márcia Telles - 2026</p>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
