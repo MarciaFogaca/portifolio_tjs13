@@ -1,81 +1,78 @@
 <!doctype html>
+
 <html lang="pt-br">
-  <head>
-    <!-- Fontes do Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
 
-    <!-- Fonte do Google - Poppins -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Márcia Telles" />
+  <meta name="description" content="Portfólio profissional de Márcia Telles - Desenvolvedora Full Stack" />
+  <meta name="robots" content="index, follow" />
 
+  <title>Portfólio - Márcia Telles</title>
 
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Márcia Telles>">
-  <meta name ="description" content="Portfólio Pessoal da Márcia Telles, 
-                desenvolvedora Full Stack especializada em criar experiências 
-                digitais incríveis. Conheça meus projetos e entre em contato!">
-  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
+  <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
 
-    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-     <!-- CSS principal da página -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  
-  <title>Portfólio da Márcia</title>
-  </head>
+</head>
 
-  <body>
-    <!-- Cabeçalho da Página (header) -->
-    <header class="menu-container">
-        <div class="menu-content">
-            <a href="index.html" id="titulo">Portfólio</a>
+<body>
 
-            <nav>
-                <ul class="menu-list">
-                    <li><a href="index.html#hero">Início</a></li>
-                    <li><a href="index.html#about">Sobre</a></li>
-                    <li><a href="index.html#projects">Projetos</a></li>
-                    <li><a href="index.html#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- Seção Principal da Página (main) -->
-    <main>
-        
-        <!-- Mensagem de Sucesso -->
-        <section class="success-container">
-            <article class="success-content">
+<!-- HEADER -->
+<header>
+  <div class="menu-content">
+    <a href="index.html" id="titulo">Portfólio</a>
 
-                <figure class="success-icon">
-                    <img src="./assets/img/success.svg" 
-                        alt="Ilustração de sucesso" 
-                        class="float-animation" width="20%"
-                    >
-                </figure>
+    <nav>
+      <ul class="menu-list">
+        <li><a href="index.html#hero">Início</a></li>
+        <li><a href="index.html#about">Sobre</a></li>
+        <li><a href="index.html#projects">Projetos</a></li>
+        <li><a href="index.html#contact">Contatos</a></li>
+      </ul>
+    </nav>
 
+    <!-- Botão Dark Mode -->
+    <button id="theme-toggle">🌙</button>
+  </div>
+</header>
 
+<main>
 
+  <!-- MENSAGEM DE SUCESSO -->
+  <section class="success-container">
+    <article class="success-content">
 
-                <h1>E-mail enviado com Sucesso!</h1>
-                <h2>Obrigado por entrar em contato! <br> Logo mais retornarei sua mensagem.</h2>
+      <figure class="success-icon">
+        <img
+          src="./assets/img/success.svg"
+          alt="Ícone de sucesso"
+          class="float-animation"
+        />
+      </figure>
 
-                <a class="botao" href="index.html">Voltar para o Início</a>
+      <h1>E-mail enviado com Sucesso!</h1>
+      <h2>Obrigado por entrar em contato! <br> Logo mais retornarei sua mensagem.</h2>
 
-            </article>
-        </section>
-        
-    </main>
+      <a class="botao" href="index.html">Voltar para o Início</a>
 
-    <!-- Rodapé da Página (footer) -->
-    <footer>
-		  Desenvolvido por Márcia Telles- 2026
-    </footer>
+    </article>
+  </section>
+
+</main>
+
+<footer>
+  Desenvolvido por Márcia Telles - 2026
+</footer>
+
+<!-- Script apenas para dark mode -->
+<script src="./assets/js/script.js"></script>
 
 </body>
-
 </html>
